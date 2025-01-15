@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication
 def main():
     app = QApplication(sys.argv)
     # Adjust these values for board size and number of mines
-    rows, cols, num_mines = 10, 10, 1
+    rows, cols, num_mines = 10, 10, 10
     game = Game(rows, cols, num_mines)
     game.show()
 

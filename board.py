@@ -24,7 +24,7 @@ class Board(QWidget):
                 # Connect left-click (non-revealed) to reveal_cell call.
                 cell.clicked.connect(lambda _, cx=x, cy=y: self.reveal_cell(cx, cy))
                 # When a revealed cell is clicked, try to reveal its neighbors.
-                cell.reveal_neighbors_signal.connect(self.reveal_neighbors)
+
 
         self.place_mines()
         self.calculate_adjacent_mines()
